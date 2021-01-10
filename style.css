@@ -1,0 +1,454 @@
+
+a{
+  text-decoration: none;/*texte du lien non-souligné*/
+}
+
+body{
+  background-color: #DFD0BB;/*coleur de fond pour la page d'acceuil*/
+
+}
+
+/*  */
+.slogan{
+  color:#CC7952;/* coleur du texte dans .slogan */
+  /* text-shadow: 3px 3px 10px #943D2C; décoration du texte  */
+  line-height: 0.5; /* distance entre h1 et h2 du .slogan */
+  position:relative;/* postionnement de ce div */
+  top: 2rem;
+  text-align: center;
+  width: 100%;
+
+}
+
+.slogan h1{
+  font-family: 'Playfair Display', cursive; /* la police */
+  font-size: 7rem; /*taille de police */
+  letter-spacing: 15px;
+  width: 100%;
+
+}
+
+.slogan h2{
+  font-family: 'Playfair Display', serif; /* la police */
+  font-style: italic;
+  font-size: 2.5rem; /*taille de police */
+  font-weight: normal;
+  width: 100%;
+}
+
+.acceuil-menu{
+  font-family: 'Poppins', sans-serif;/* la police */
+  font-size: 2.5rem; /*taille de police */
+  font-weight: bold;
+  line-height: 0.5;/*distance entre ligne */
+  text-align: right;/* alignement*/
+  position:relative;
+  top:300px;
+  right:100px;
+}
+
+.acceuil-menu a {
+  color:#CC7952;
+}
+
+.acceuil-menu p :hover{
+  /* changer le style du lien lorsque le souris passe*/
+  position:relative; /*position*/
+  bottom: 5px;
+  right: 5px;
+  color: #DFD0BB;
+  text-shadow: 5px 5px #943D2C; /* décoration du texte  */
+}
+
+.acceuil-img{
+  display: block;
+  margin: auto;
+  /*position : je veut que ce div sert comme img de fond*/
+  position: absolute;
+  z-index: -1; /*aller au fond*/
+  width: 100%;
+  /*pour centrer verticalement l'image*/
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/*CSS pour le nav*/
+.nav-bar{
+  background-color: black;
+  height: 8vh;
+  width: 100%;
+  /*pour positionner la navgiation en haut*/
+  position:fixed;
+  /*pour positionner le logo et les nav-items à deux cotés de navbar*/
+  display: flex;
+  justify-content: space-between;
+  /*pour qu'il n'ait pas d'espace autour de la navbar*/
+  top:0;
+  left:0;
+  letter-spacing: 0.1rem;
+  align-items: center;/*pour centrer verticalement les elements*/
+  z-index: 2;/*pour que le menu horizontal soit tjr au prmier rang*/
+}
+
+.logo a{
+  font-family: 'Poppins', sans-serif;/* la police */
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: white;
+  /* pour donner un peu d'espace à gauche du logo sans impacter la postion des nav-items */
+  padding-left: 30px;
+}
+.nav-items {
+  /* pour positionner les 3 items */
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-right: 20px;
+
+}
+
+.nav-items li {
+  /* pour supprimer le style par défaut */
+  list-style: none;
+  width: 30%;
+  text-align: center;
+}
+
+.nav-items a {
+  font-family: 'Playfair Display', serif; /* la police */
+  color: #e3e2de;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-items :hover{
+  color:#CC7952;/* changer couleur lorsque la souris est dessus */
+}
+/*CSS pour le nav TERMINER*/
+
+/*CSS pour la partie du texte de présentation*/
+.main-pre{
+  /*pour définir une zone de texte*/
+  width: 70%;
+  margin: auto;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+.main-pre h1{
+  /*titre*/
+  font-family: 'Playfair Display', serif; /* la police */
+  font-size: 5rem;
+  letter-spacing: .5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 200px;
+
+}
+
+.main-pre img{
+  /*pour que img soit à gauche du texte avec certaine espace*/
+  width: 50%;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  float:left;
+}
+
+.main-pre p{
+  /*style du texte*/
+  font-family: 'Playfair Display', serif; /* la police */
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.main-pre span{
+  /*changer le couleur de certiane mot*/
+  color:#943D2C;
+}
+
+/*Page Projet*/
+  /*pour la liste d'option d'affichage*/
+  /*pour que le div soit en haut de page*/
+.show-option{
+  height:4vh;
+  width:100%;
+  position: relative;
+  top:9vh;
+  left:0;
+  /*et les elements soit centrés*/
+  text-align: center;
+}
+
+.show-option div{
+  /*pour que dans le div, img et p soit l'un à coté de l'autre*/
+  display: inline-block;
+  /*la taille de ce div(qui servira à un button)*/
+  width: 10%;
+  height:4vh;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;/* la police */
+  margin:0 3%;/*pour qu'il ait une espace entre les div(button)*/
+  border-radius: 50px;
+  transition: 0.6s; /*animation*/
+
+}
+
+.show-option div:hover{
+  /*pour créer un effet*/
+  background-color: #CC7952;
+}
+
+.show-option img{
+  /*taille d'image*/
+  width: 8%;
+  vertical-align: middle;
+  /*centrer verticalement*/
+  position:relative;
+  top:10%;
+}
+.show-option p{
+  /*pour que p soit à coté d'img*/
+  display: inline-block;
+  margin: 0 auto;
+  /*centrer verticalement*/
+  position:relative;
+  top:15%;
+}
+
+#carouselExampleIndicators{
+  /*pour positionner la carrousel*/
+  position: relative;
+  top :11vh;
+}
+
+#carouselExampleIndicators img{
+  /*pour modifier la taille des images et de les positionner au centre*/
+  width: 75%;
+  margin: 0 auto;
+}
+
+.carousel-caption{
+  /*pour modifier la police de la description sur la crrousel*/
+  font-family: 'Playfair Display', serif; /* la police */
+  /*j'utilise rgba pour pouvoir changer l'opacité de la couleur de fond uniquement sans influencer le texte*/
+  background-color: rgba(0,0,0,.5)
+}
+.carousel-caption h5, .carousel-caption p{
+  /*je met le texte en blanc pour la lisibilité*/
+  color:white;
+}
+
+/*la partie pour l'affichage liste*/
+
+.list-affichage{
+  width: 100%;
+  /*pour positionner le div*/
+  position: relative;
+  top:11Vh;
+}
+
+.list-affichage h1, .grid-affichage h1{
+  width: 100%;
+  font-family: 'Playfair Display', serif; /* la police */
+  text-align: center; /*pour centrer*/
+  font-size: 4rem;/*taille*/
+  font-weight: bold;/*style*/
+  letter-spacing: .2rem;
+}
+
+
+.list-colonne{
+  background-color: #CC7952;
+  width: 20%;
+  height:70vh;
+  margin-left: 10%;
+  /*pour qu'il soit l'un à coté de l'autre*/
+  padding-top: 60px;
+  padding-left: 20px;
+  position:absolute;
+  padding-right: 20px;
+}
+
+.list-colonne p {
+  font-family: 'Poppins', sans-serif;/* la police */
+  font-weight: bold;
+  width: auto;
+  text-align: right;/*centrer*/
+  font-size: 1.5rem;
+  margin-bottom: 30px;/*espace*/
+}
+
+.list-colonne p:hover, .clicked{
+  /*pour créer un effect hover*/
+  position: relative;
+  bottom:5px;
+  right: 5px;
+  text-shadow: 5px 5px #943D2C;
+}
+
+
+.list-container{
+  /*positionnement*/
+  position:absolute;
+  right:10%;
+  width:60%;
+  padding-left: 60px;
+  padding-top: 30px;
+}
+
+.list-container img{
+  /*taille d'img*/
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.list-container hr{
+  /*taille de hr*/
+  height: 5px;
+  margin-bottom: 30px;
+}
+
+.list-container div{
+  margin-bottom: 20%;
+}
+
+.list-container p{
+  font-family: 'Poppins', sans-serif;/* la police */
+}
+
+/*pour le style affichage grid*/
+
+.grid-affichage{
+  width: 100%;
+  /*pour positionner le div*/
+  position: relative;
+  top:11Vh;
+  /*pour centrer les images */
+  margin-bottom: 20%
+}
+.grid-container{
+  padding-left: 24%;
+  padding-right: 22.5%;
+}
+
+.grid-affichage img{
+  /* pour que les images soit présenté en carré*/
+  object-fit: cover;
+  width:200px;
+  height:200px;
+  /*placement des images*/
+  margin: 20px;
+  transition: 0.6s
+}
+.grid-affichage img:hover{
+  /* pour créer un effect avec hover*/
+  width:220px;
+  height:220px;
+  margin: 0;
+  margin-left: 20px;
+  /*effect l'ombre*/
+  filter:drop-shadow(5px 5px 15px grey);
+}
+
+.titre-formulaire, .formulaire-main{
+  /*pour centrer*/
+  position:relative;
+  top:15vh;
+  text-align: center;
+  font-family: 'Playfair Display', serif; /* la police */
+  letter-spacing:.2rem;
+}
+.formulaire-main{
+  /*positionnement du formulaire*/
+  padding-top: 3vh;
+  padding-bottom: 20vh;
+}
+.titre-formulaire h1{
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.formulaire-main table{
+  /*pour centrer la table*/
+  margin: 0 auto;
+}
+.formulaire-main label{
+  /*pour que les labels soit à coté des inputs */
+  width: 100%;
+  text-align: right;
+}
+.formulaire-main td{
+  /*pour avoir un peu d'espace entre les lignes */
+  padding-top: 10px;
+  vertical-align: top;
+}
+
+.formulaire-main p{
+  /*style pour bas de page*/
+  margin-top: 30px;
+  color:grey;
+}
+
+.formulaire-main h5{
+  /*pour le positionnement de le style du button*/
+  font-size: 1rem;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 50px;
+  padding: 10px 0;
+  display: inline-block;
+}
+.formulaire-main h5:hover{
+  /*pour créer un effet*/
+  background-color: #CC7952;
+  transition: 0.6s; /*animation*/
+}
+
+form input{
+  text-align: left;
+}
+
+.form_p2 h4{
+  /*pour la partie d'input radio, ils sont compliqué à mettre en formexs*/
+  width: 300px;
+  font-size: 1rem;
+  display:inline-block;
+  text-align: left;
+  margin-left: 10px;
+}
+
+button{
+  /*pour éffacer le style du button par défaut*/
+  border: 0;
+  background-color: inherit;
+}
+
+/* css pour form validation*/
+
+/* Styles */
+
+
+form {
+  padding: 50px;
+  background: #2c3e50;
+  color: #fff;
+
+}
+
+
+form .error {
+  width: auto;
+  color: #ff0000;
+  display: block;
+}
+
+label.error{
+  font-size: 9px;
+  letter-spacing: 0;
+}

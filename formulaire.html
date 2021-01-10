@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <!-- titre de la page -->
+  <title>Pinyi Li - Contact</title>
+  <!-- métadonné de la page  -->
+  <meta name="author" content="Mingyuan" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="keywords" content="piniyi, artiste, art" />
+
+  <!-- lien pour intégrer la police  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:ital,wght@0,500;0,800;1,500&family=Poppins:ital,wght@0,400;0,800;1,800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <!-- J'ai utilisé Bootstrap que pour la partie carrousel mais bizzarement cela change un peu la position de mon menu horizontal original et je n'arrive pas à le corrigé. j'ai donc décidé de mettre ce lien dans tous les pages pour la cohérence -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- lien au css -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<!-- contenu de la page commence ici -->
+
+<body>
+  <!-- créer un menu horizontal fixe en haut de la page avec liste-->
+  <div class="nav-bar">
+    <div class="logo">
+      <a href="index.html">PINYI LI</a>
+    </div>
+    <ul class="nav-items">
+      <li>
+        <a href="index.html">Acceuil</a>
+      </li>
+
+      <li>
+        <a href="présentation.html">Elle</a>
+      </li>
+      <li>
+        <a href="projet.html">Projet</a>
+      </li>
+
+      <li>
+        <a href="formulaire.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- titre du page -->
+  <div class="titre-formulaire">
+    <h1>Contact</h1>
+    <p>& Inscription aux Newsletters</p>
+  </div>
+
+  <!-- un div pour contenir le formulaire -->
+  <div class="formulaire-main">
+    <!-- formulaire commence ici-->
+    <form class="" name="contact-form" action="formulaire.html" method="post">
+
+      <fieldset>
+        <!-- je divise le fommulaire en 3 parties, chacune dans un div, pour réaliser show() et hide()-->
+        <div class="form_p1">
+          <!-- une balise legend pour chaque partie-->
+          <legend>Vos Informations</legend>
+          <!-- j'utilise une baslie table pour organiser le placement des balises label et inputs -->
+          <table>
+            <tr>
+              <td><label for="">Nom : </label> </td>
+              <td><input class="input-nom" type="text" name="nom" placeholder="Votre Nom"></td>
+            </tr>
+            <tr>
+              <td><label for="">Prénom : </label> </td>
+              <td><input class="input-prenom" type="text" name="prénom" placeholder="Votre Prénom"></td>
+            </tr>
+            <tr>
+              <td><label for="">E-Mail : </label> </td>
+              <td><input class="input-mail" type="text" name="mail" placeholder="Votre Mail"></td>
+            </tr>
+            <tr>
+              <td><label for="">Numéro : </label> </td>
+              <td><input class="input-num" type="text" name="portable" placeholder="Votre Numéro"></td>
+            </tr>
+          </table>
+          <!--bas de page pour indiquer la partie et h5 qui sert comme un button-->
+          <p>1/2</p>
+          <div class="">
+            <h5 class="btn-12">Suivant >>></h5>
+          </div>
+        </div>
+        <div class="form_p2">
+          <!-- partie 2 du formulaire -->
+          <legend>Raison du Contact</legend>
+          <table>
+            <tr>
+              <td><label for="">Vous etês :</label> </td>
+              <td><select class="nature" name="nature">
+                <option name="nature" value="particulier">Particulier</option>
+                <option name="nature" value="company">Company</option>
+                <option name="nature" value="gallery">Gallery</option>
+              </select></td>
+            </tr>
+            <!-- c'est ici que je vais faire l'affichage de différentes partie selon la valeur des inputs -->
+            <tr>
+              <td><label for="">Vous me contacter pour:</label> </td>
+              <td>
+                <input type="radio" name="type" value="inscription"><h4>Inscription aux Newsletters</h4> <br>
+                <input type="radio" name="type" value="partenariat"><h4>Partenariat commercial</h4> <br>
+                <input type="radio" name="type" value="invitation"><h4>Invitation d'éxposition</h4>
+              </td>
+            </tr>
+            <!-- ici c'est la partie du formulaire optionel -->
+            <tr class="partenariat">
+              <td><label for="">Votre company :</label> </td>
+              <td><input class="company" type="text" name="company" placeholder="Votre Company"></td>
+            </tr>
+            <tr class="partenariat">
+              <td><label for="">Détails :</label></td>
+              <td><textarea name="detail" rows="8" cols="40"></textarea> </td>
+            </tr>
+            <tr class="invitation">
+              <td><label for="">Date : </label> </td>
+              <td><input class="invitation date" type="text" name="date" placeholder=""></td>
+            </tr>
+            <tr class="invitation">
+              <td><label for="">Lieu : </label> </td>
+              <td><input class="invitation lieu" type="text" name="lieu" placeholder=""></td>
+            </tr>
+            <tr class="invitation">
+              <td><label for="">Thème : </label> </td>
+              <td><input class="invitation theme" type="text" name="theme" placeholder=""></td>
+            </tr>
+          </table>
+          <p>2/2</p>
+          <div class="">
+            <h5 class="btn-12"><<< Précédent</h5>
+            <h5 class="btn-23 gen-récap">Enregistrer</h5>
+          </div>
+        </div>
+        <!-- partie 3, récap -->
+        <div class="form_p3">
+          <legend>Récapitulatif</legend>
+          <div class="récap-text">
+
+          </div>
+
+
+          <div class="">
+            <h5 class="btn-23"><<< Modifier</h5>
+            <!-- pour terminer j'ai du utiliser une balise button pour avoir type='submit'-->
+            <button type="submit" name="button"><h5>Terminer</h5></button>
+          </div>
+        </div>
+
+      </fieldset>
+
+    </form>
+  </div>
+
+  <!-- lien jQuery et index.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- validation plugin -->
+  <script src="jquery-validation-1.19.1/dist/jquery.validate.min.js"></script>
+  <!-- aotocomplétion -->
+  <script src="EasyAutocomplete-1.3.5/jquery.easy-autocomplete.min.js"></script>
+
+  <script src="contact.js" charset="utf-8"></script>
+
+</body>
+
+
+
+</html>
